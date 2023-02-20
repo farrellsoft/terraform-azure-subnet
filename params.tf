@@ -30,3 +30,12 @@ variable address_prefixes {
     error_message = "At least one address prefix must be specified."
   }
 }
+
+variable delegations {
+  type            = map(object({
+    service_name        = string,
+    actions             = optional(list(string), [])
+  }))
+  description     = "The delegations to use for the subnet."
+  default         = {}
+}
