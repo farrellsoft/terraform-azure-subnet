@@ -1,6 +1,3 @@
-provider azurerm {
-  features {}
-}
 
 resource azurerm_subnet this {
   name                 = "snet-${lower(var.application)}-${lower(var.purpose)}"
