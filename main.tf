@@ -10,7 +10,7 @@ resource azurerm_subnet this {
     content {
       name = delegation.key
       service_delegation {
-        name    = delegation.value.name
+        name    = delegation.value.service_name
         actions = delegation.value.actions
       }
     }
