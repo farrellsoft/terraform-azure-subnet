@@ -39,3 +39,15 @@ variable delegations {
   description     = "The delegations to use for the subnet."
   default         = {}
 }
+
+variable enable_private_endpoint_policies {
+  type        = bool
+  description = "Whether to disable private endpoint policies for the subnet."
+  default     = true
+}
+
+variable enable_private_link_service_network_policies {
+  type        = bool
+  description = "Whether to disable private link service network policies for the subnet."
+  default     = true
+}

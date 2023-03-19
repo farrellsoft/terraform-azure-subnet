@@ -1,10 +1,10 @@
 
 output name {
-  value       = azurerm_subnet.this.name
+  value       = azapi_resource.this.name
   description = "The name of the subnet."
 }
 
 output id {
-  value       = azurerm_subnet.this.id
+  value       = azapi_resource.this.id
   description = "The ID of the subnet."
 }
